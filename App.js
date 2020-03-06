@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Button, TextInput } from "react-native";
+import { StyleSheet, Text, View, Button, TextInput, ScrollView } from "react-native";
 
 export default function App() {
   const [enterNote, setEnterNote] = useState("");
@@ -26,9 +26,13 @@ export default function App() {
         />
       </View>
       <View>
+        <ScrollView>
         {notes.map(goals => (
+          <View style={styles.textCard}>
           <Text>{goals}</Text>
+          </View>
         ))}
+        </ScrollView>
       </View>
 
     </View>
@@ -53,5 +57,10 @@ const styles = StyleSheet.create({
   buttonStyle: {
     width: " 20%"
 
+  },
+  textCard:{
+    padding:20,
+    backgroundColor:"#ccc",
+    marginBottom:3
   }
 });
