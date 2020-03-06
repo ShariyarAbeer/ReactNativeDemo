@@ -1,19 +1,4 @@
 import React, { useState } from "react";
-<<<<<<< HEAD
-import { StyleSheet, Text, View, Button } from "react-native";
-
-export default function App() {
-  const [outputText, setoutputText] = useState(
-    "Open up App.js to start working on your app!"
-  );
-  return (
-    <View style={styles.container}>
-      <Text>{outputText}</Text>
-      <Button
-        title="Click me"
-        onPress={() => setoutputText("Text Change on click ")}
-      />
-=======
 import { StyleSheet, Text, View, Button, TextInput } from "react-native";
 
 export default function App() {
@@ -45,19 +30,13 @@ export default function App() {
           <Text>{goals}</Text>
         ))}
       </View>
->>>>>>> 1985ea57acc08c77a4016b3c9866ae5165f12d95
+
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-<<<<<<< HEAD
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-=======
+
   screen: {
     padding: 60
   },
@@ -73,6 +52,6 @@ const styles = StyleSheet.create({
   },
   buttonStyle: {
     width: " 20%"
->>>>>>> 1985ea57acc08c77a4016b3c9866ae5165f12d95
+
   }
 });
